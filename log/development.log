@@ -41,3 +41,1633 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2024-10-17 05:44:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20241017024316_create_posts.rb
+
+
+):
+  
+activerecord (7.2.1.1) lib/active_record/migration.rb:756:in `check_pending_migrations'
+activerecord (7.2.1.1) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.1.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.1.1) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.1.1) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-10-17 05:44:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20241017024316_create_posts.rb
+
+
+):
+  
+activerecord (7.2.1.1) lib/active_record/migration.rb:756:in `check_pending_migrations'
+activerecord (7.2.1.1) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.1.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.1.1) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.1.1) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2024-10-17 05:44:24 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreatePosts (20241017024316)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "body" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241017024316') RETURNING "version"[0m
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-10-17 05:44:24 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hp/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-7.2.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hp/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-7.2.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2024-10-17 05:45:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for PostsController):
+  
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:158:in `process'
+actionview (7.2.1.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-10-17 05:45:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts" for 127.0.0.1 at 2024-10-17 06:13:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @posts.each do |post| %>
+  <div>
+    <h2><%= post.title %></h2>
+    <%= post.body%>
+  </div>
+):
+
+Causes:
+ActiveSupport::SyntaxErrorProxy (/home/hp/PROJECTS/blog/app/views/posts/index.html.erb:7: syntax error, unexpected end-of-input, expecting `end' or dummy end
+          end
+             ^
+)
+1:    <% @posts.each do |post| %>
+2:      <div>
+3:        <h2><%= post.title %></h2>
+4:        <%= post.body%>
+5:      </div>
+  
+app/views/posts/index.html.erb:7: syntax error, unexpected end-of-input, expecting `end' or dummy end
+Started GET "/posts" for 127.0.0.1 at 2024-10-17 06:13:22 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @posts.each do |post| %>
+  <div>
+    <h2><%= post.title %></h2>
+    <%= post.body %>
+  </div>
+):
+
+Causes:
+ActiveSupport::SyntaxErrorProxy (/home/hp/PROJECTS/blog/app/views/posts/index.html.erb:7: syntax error, unexpected end-of-input, expecting `end' or dummy end
+          end
+             ^
+)
+1:    <% @posts.each do |post| %>
+2:      <div>
+3:        <h2><%= post.title %></h2>
+4:        <%= post.body %>
+5:      </div>
+  
+app/views/posts/index.html.erb:7: syntax error, unexpected end-of-input, expecting `end' or dummy end
+Started GET "/posts" for 127.0.0.1 at 2024-10-17 06:13:44 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (17.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 514.5ms | GC: 101.4ms)
+Completed 200 OK in 519ms (Views: 490.6ms | ActiveRecord: 26.2ms (1 query, 0 cached) | GC: 101.4ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:13:45 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (2.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "My first post"], ["body", "This is my first post"], ["created_at", "2024-10-17 03:15:13.832036"], ["updated_at", "2024-10-17 03:15:13.832036"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/posts" for 127.0.0.1 at 2024-10-17 06:15:19 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | GC: 0.0ms)
+Completed 200 OK in 46ms (Views: 33.3ms | ActiveRecord: 11.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:15:19 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 06:22:55 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | GC: 1.6ms)
+Completed 200 OK in 51ms (Views: 24.4ms | ActiveRecord: 7.0ms (1 query, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:22:55 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/100" for 127.0.0.1 at 2024-10-17 06:25:32 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 17ms (ActiveRecord: 7.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 06:25:32 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:25:32 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 06:33:48 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (10.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | GC: 9.6ms)
+Completed 200 OK in 45ms (Views: 27.7ms | ActiveRecord: 14.6ms (1 query, 0 cached) | GC: 9.6ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:33:48 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 06:33:49 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 06:34:55 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | GC: 0.9ms)
+Completed 200 OK in 34ms (Views: 17.9ms | ActiveRecord: 7.1ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:34:55 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 06:35:01 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 06:35:01 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 06:35:02 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 0.8ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 06:35:10 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 12.4ms | ActiveRecord: 4.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:35:10 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 06:35:12 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @posts.each do |post| %>
+  <div>
+    <h2><%= link_to post.title, post_path(post.id %></h2>
+    <%= post.body %>
+  </div>
+<% end%>
+):
+
+Causes:
+ActiveSupport::SyntaxErrorProxy (/home/hp/PROJECTS/blog/app/views/posts/index.html.erb:6: syntax error, unexpected `end', expecting ')'
+'.freeze; end;
+          ^~~
+/home/hp/PROJECTS/blog/app/views/posts/index.html.erb:8: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+)
+1:    <% @posts.each do |post| %>
+2:      <div>
+3:        <h2><%= link_to post.title, post_path(post.id %></h2>
+4:        <%= post.body %>
+5:      </div>
+6:    <% end%>
+  
+app/views/posts/index.html.erb:6: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:8: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2024-10-17 06:35:20 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | GC: 0.2ms)
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 3.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:35:20 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-10-17 06:36:32 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | GC: 4.9ms)
+Completed 200 OK in 31ms (Views: 25.3ms | ActiveRecord: 3.8ms (1 query, 0 cached) | GC: 4.9ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 06:36:32 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 06:36:33 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | GC: 0.7ms)
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2024-10-17 08:17:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 08:17:40 +0300
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for PostsController):
+  
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:158:in `process'
+actionview (7.2.1.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 08:17:57 +0300
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for PostsController):
+  
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:158:in `process'
+actionview (7.2.1.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 08:18:09 +0300
+Processing by PostsController#new as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::MissingExactTemplate (PostsController#new is missing a template for request formats: text/html):
+  
+actionpack (7.2.1.1) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (7.2.1.1) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (7.2.1.1) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.11) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.11) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.2.1.1) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (7.2.1.1) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.1.1) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.1.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.1.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.1.1) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.1.1) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:163:in `process'
+actionview (7.2.1.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 08:18:13 +0300
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for PostsController):
+  
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:158:in `process'
+actionview (7.2.1.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 08:18:21 +0300
+Processing by PostsController#new as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::MissingExactTemplate (PostsController#new is missing a template for request formats: text/html):
+  
+actionpack (7.2.1.1) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (7.2.1.1) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (7.2.1.1) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.11) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.11) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.2.1.1) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (7.2.1.1) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.1.1) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.1.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.1.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.1.1) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.1.1) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:163:in `process'
+actionview (7.2.1.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 09:52:40 +0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 4.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for an instance of #<Class:0x00007dd2e2c39c58>):
+
+Causes:
+NameError (undefined local variable or method `post' for an instance of #<Class:0x00007dd2e2c39c58>)
+    1: <h1>New Blog Post</h1>
+    2: <%= form_with model: post do |form| %>
+    3:   <div>
+    4:     <%= form.label :title%>
+    5:     <%= form.text_field :title %>
+  
+app/views/posts/new.html.erb:2
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 09:53:14 +0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 8.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | GC: 1.2ms)
+Completed 200 OK in 44ms (Views: 27.2ms | ActiveRecord: 6.3ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 09:53:14 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2024-10-17 10:23:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:23:56 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 10:23:57 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | GC: 1.1ms)
+Completed 200 OK in 47ms (Views: 18.6ms | ActiveRecord: 6.6ms (1 query, 0 cached) | GC: 4.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2024-10-17 10:24:05 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:24:05 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:24:07 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:24:08 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:24:08 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:24:10 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 10:24:19 +0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:24:19 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2024-10-17 10:24:23 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 10.6ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | GC: 1.8ms)
+Completed 422 Unprocessable Content in 16ms (Views: 13.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 10:27:32 +0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:27:32 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2024-10-17 10:27:35 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2024-10-17 10:27:41 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Hello World", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 11ms (Views: 7.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2024-10-17 10:30:29 +0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | GC: 1.0ms)
+Completed 200 OK in 36ms (Views: 21.2ms | ActiveRecord: 7.2ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-17 10:30:29 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2024-10-17 10:30:30 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 9.0ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | GC: 0.1ms)
+Completed 422 Unprocessable Content in 22ms (Views: 13.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/user" for ::1 at 2024-10-17 22:04:45 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/favicon.ico" for ::1 at 2024-10-17 22:04:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2024-10-17 22:04:50 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (14.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 45.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 110.4ms | GC: 0.0ms)
+Completed 200 OK in 138ms (Views: 75.3ms | ActiveRecord: 36.7ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-17 22:04:50 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for ::1 at 2024-10-17 22:04:53 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | GC: 1.2ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2024-10-17 22:05:05 +0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 12.3ms | GC: 5.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | GC: 5.9ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.9ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-17 22:05:06 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2024-10-18 05:21:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 17.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 101.1ms | GC: 22.1ms)
+Completed 200 OK in 167ms (Views: 104.8ms | ActiveRecord: 17.7ms (0 queries, 0 cached) | GC: 22.1ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 05:21:22 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2024-10-18 05:21:31 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Hello World", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2024-10-18 05:21:39 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 8.4ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | GC: 0.5ms)
+Completed 422 Unprocessable Content in 18ms (Views: 14.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2024-10-18 05:34:55 +0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.1ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 28.5ms | GC: 23.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | GC: 25.2ms)
+Completed 200 OK in 63ms (Views: 44.5ms | ActiveRecord: 5.4ms (0 queries, 0 cached) | GC: 25.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 05:34:55 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2024-10-18 05:34:57 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 5.5ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 6.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 17ms (Views: 10.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2024-10-18 05:35:02 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Hello World", "body"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.2ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 0.5ms)
+Completed 422 Unprocessable Content in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2024-10-18 05:35:09 +0300
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "body"=>"n"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.7ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2024-10-18 05:53:42 +0300
+  
+SyntaxError (/home/hp/PROJECTS/blog/app/controllers/posts_controller.rb:26: `@' without identifiers is not allowed as an instance variable name
+    @
+    ^
+):
+  
+app/controllers/posts_controller.rb:26: `@' without identifiers is not allowed as an instance variable name
+Started GET "/favicon.ico" for ::1 at 2024-10-18 05:53:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts/1/edit" for ::1 at 2024-10-18 05:57:08 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.1ms | GC: 0.0ms)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | GC: 1.9ms)
+Completed 200 OK in 63ms (Views: 26.4ms | ActiveRecord: 6.2ms (1 query, 0 cached) | GC: 8.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 05:57:08 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2024-10-18 06:06:20 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.4ms | GC: 0.3ms)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 3.6ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | GC: 1.4ms)
+Completed 200 OK in 54ms (Views: 22.2ms | ActiveRecord: 5.7ms (1 query, 0 cached) | GC: 7.7ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 06:06:20 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2024-10-18 07:41:35 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.5ms | GC: 0.2ms)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.9ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | GC: 1.2ms)
+Completed 200 OK in 42ms (Views: 21.4ms | ActiveRecord: 4.2ms (1 query, 0 cached) | GC: 2.8ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 07:41:35 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/up" for ::1 at 2024-10-18 07:45:02 +0300
+Processing by Rails::HealthController#show as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/service_worker" for ::1 at 2024-10-18 07:45:24 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/service_worker"):
+  
+Started GET "/service-worker" for ::1 at 2024-10-18 07:45:31 +0300
+Processing by Rails::PwaController#service_worker as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+  
+ActionView::MissingTemplate (Missing template pwa/service-worker with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/hp/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-7.2.1.1/lib/rails/templates"
+  * "/home/hp/PROJECTS/blog/app/views"
+  * "/home/hp/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/turbo-rails-2.0.11/app/views"
+  * "/home/hp/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/actiontext-7.2.1.1/app/views"
+  * "/home/hp/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/actionmailbox-7.2.1.1/app/views"
+):
+  
+actionview (7.2.1.1) lib/action_view/path_set.rb:42:in `find'
+actionview (7.2.1.1) lib/action_view/lookup_context.rb:131:in `find'
+actionview (7.2.1.1) lib/action_view/renderer/template_renderer.rb:49:in `determine_template'
+actionview (7.2.1.1) lib/action_view/renderer/template_renderer.rb:7:in `render'
+actionview (7.2.1.1) lib/action_view/renderer/renderer.rb:58:in `render_template_to_object'
+actionview (7.2.1.1) lib/action_view/renderer/renderer.rb:31:in `render_to_object'
+actionview (7.2.1.1) lib/action_view/rendering.rb:135:in `block in _render_template'
+actionview (7.2.1.1) lib/action_view/base.rb:308:in `in_rendering_context'
+actionview (7.2.1.1) lib/action_view/rendering.rb:134:in `_render_template'
+actionpack (7.2.1.1) lib/action_controller/metal/streaming.rb:258:in `_render_template'
+actionview (7.2.1.1) lib/action_view/rendering.rb:121:in `render_to_body'
+actionpack (7.2.1.1) lib/action_controller/metal/rendering.rb:186:in `render_to_body'
+actionpack (7.2.1.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (7.2.1.1) lib/abstract_controller/rendering.rb:29:in `render'
+actionpack (7.2.1.1) lib/action_controller/metal/rendering.rb:167:in `render'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block (2 levels) in render'
+/home/hp/.rbenv/versions/3.3.4/lib/ruby/3.3.0/benchmark.rb:313:in `realtime'
+activesupport (7.2.1.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in render'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:101:in `cleanup_view_runtime'
+activerecord (7.2.1.1) lib/active_record/railties/controller_runtime.rb:46:in `cleanup_view_runtime'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:31:in `render'
+railties (7.2.1.1) lib/rails/pwa_controller.rb:9:in `service_worker'
+actionpack (7.2.1.1) lib/action_controller/metal/basic_implicit_render.rb:8:in `send_action'
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (7.2.1.1) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.11) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.11) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.2.1.1) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (7.2.1.1) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.1.1) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.1.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.1.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.1.1) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.1.1) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.1.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.1.1) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.1.1) lib/abstract_controller/base.rb:163:in `process'
+actionview (7.2.1.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.1.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.1.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.1.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.1.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.1.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.1.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.1.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.1.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.1.1) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-10-18 07:45:46 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | GC: 9.1ms)
+Completed 200 OK in 46ms (Views: 35.0ms | ActiveRecord: 7.2ms (1 query, 0 cached) | GC: 9.4ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 07:45:46 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/posts/1" for ::1 at 2024-10-18 09:24:35 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:47:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 5.8ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil):
+
+Causes:
+NoMethodError (undefined method `title' for nil)
+    1: <h1><%= @post.title %></h1>
+    2: <%= @post.body%>
+  
+app/views/posts/show.html.erb:1
+Started GET "/posts/1" for ::1 at 2024-10-18 09:25:20 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:47:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 6.3ms (1 query, 0 cached) | GC: 5.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil):
+
+Causes:
+NoMethodError (undefined method `title' for nil)
+    1: <h1><%= @post.title %></h1>
+    2: <%= @post.body%>
+  
+app/views/posts/show.html.erb:1
+Started GET "/posts/1" for ::1 at 2024-10-18 09:25:47 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:47:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 5.7ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for nil):
+
+Causes:
+NoMethodError (undefined method `body' for nil)
+    1: <h1><%= @post %></h1>
+    2: <%= @post.body%>
+  
+app/views/posts/show.html.erb:2
+Started GET "/manifest.json" for ::1 at 2024-10-18 09:26:01 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for ::1 at 2024-10-18 09:26:02 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:47:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for nil):
+
+Causes:
+NoMethodError (undefined method `body' for nil)
+    1: <h1><%= @post %></h1>
+    2: <%= @post.body%>
+  
+app/views/posts/show.html.erb:2
+Started GET "/" for ::1 at 2024-10-18 09:26:04 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 09:26:04 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2024-10-18 09:26:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (15.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 38.3ms | GC: 10.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 98.9ms | GC: 12.8ms)
+Completed 200 OK in 159ms (Views: 79.0ms | ActiveRecord: 27.3ms (1 query, 0 cached) | GC: 47.6ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 09:26:37 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/1" for ::1 at 2024-10-18 09:26:38 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:47:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil):
+
+Causes:
+NoMethodError (undefined method `title' for nil)
+    1: <h1><%= @post.title %></h1>
+    2: <%= @post.body%>
+  
+app/views/posts/show.html.erb:1
+Started GET "/posts/1" for ::1 at 2024-10-18 09:29:21 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:47:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 21.1ms | ActiveRecord: 5.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2024-10-18 09:29:21 +0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2024-10-18 09:29:24 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:1
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | GC: 1.1ms)
+Completed 200 OK in 44ms (Views: 30.3ms | ActiveRecord: 6.1ms (1 query, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/posts/1" for ::1 at 2024-10-18 09:29:24 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:47:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
